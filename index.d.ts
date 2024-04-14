@@ -1,7 +1,6 @@
-import client from "./src/client";
-import request from "./src/request";
+import Client from "./src/client.js"
+import Request from "./src/request.js"
 
+export { Client, Request }
 
-export const Client: client
-
-export const Request: client
+export default { Client, Request }

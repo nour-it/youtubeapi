@@ -1,7 +1,8 @@
 test
 .env
+.env copy
+.gitignore
 package-lock.json
 pnpm-lock.yaml
 vite.config.js
 yarn.lock
-

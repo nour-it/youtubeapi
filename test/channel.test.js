@@ -1,6 +1,7 @@
 import assert from'assert'
 import {Client, Request} from "../index.js"
 
+
 describe('should a valide channel', function () {
   
   beforeEach(async function () {

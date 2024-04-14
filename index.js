@@ -1,8 +1,7 @@
 'use-strict'
+import Client from "./src/client.js"
+import Request from "./src/request.js"
 
-import client from "./src/client.js"
-import request from "./src/request.js"
+export { Client, Request }
 
-export const Client = client
-
-export const Request = request
+export default { Client, Request }

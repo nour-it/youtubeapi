@@ -1,7 +1,4 @@
-import client from "./src/client";
-import request from "./src/request";
+import Client from "./src/client";
+import Request from "./src/request";
 
-declare const Client: client
-declare const Request: request
-
-export = { Client, Request }
+export = { Client: Client, Request: Request }

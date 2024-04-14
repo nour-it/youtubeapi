@@ -2,10 +2,27 @@
   "name": "youtubenouritclient",
   "version": "1.3.3",
   "description": "Api to provide data about videos, channels from youtube",
-  "type": "module",
   "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": {
+        "require": "./index.d.cts",
+        "default": "./index.d.ts"
+      },
+      "browser": {
+        "require": "./dist/index.cjs",
+        "default": "./index.js"
+      },
+      "default": {
+        "require": "./dist/index.cjs",
+        "default": "./index.js"
+      }
+    }
+  },
   "scripts": {
-    "test": "npx mocha"
+    "test": "npx mocha",
+    "publish": "npx vite build && npm publish"
   },
   "keywords": [
     "YOUTUBE",
